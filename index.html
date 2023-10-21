@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ProTrading</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <picture
+          ><source
+            srcset="
+              ./images/header-coin-noblur-mobile-1x.png 1x,
+              ./images/header-coin-noblur-mobile-2x.png 2x
+            "
+            media="(min-width: 320px)"
+            width="71"
+            height="71" />
+          <img
+            class="coin-noblur"
+            src="./images/header-coin-noblur-mobile-1x.png"
+            alt=""
+            width="71"
+            height="71"
+        /></picture>
+        <picture
+          ><source
+            srcset="
+              ./images/header-coin-blur-mobile-1x.png 1x,
+              ./images/header-coin-blur-mobile-2x.png 2x
+            "
+            media="(min-width: 320px)"
+            width="128"
+            height="128" />
+          <img
+            class="coin-blur"
+            src="./images/header-coin-blur-mobile-1x.png"
+            alt=""
+            width="128"
+            height="128"
+        /></picture>
+        <p class="start">старт 30 жовтня</p>
+        <h1 class="header-title">
+          Перетвотрюй <br /><span>свій час на <br />гроші</span> 
+        </h1>
+        <p class="header-description">
+          Пройди наш 7денний інтенсив «ProTrading» та дізнайся як заробити свої
+          перші гроші на трейдингу
+        </p>
+        <a class="header-button link" href="#more">ДЕТАЛЬНІШЕ</a>
+        <div class="header-sale-mark">
+          <picture
+            ><source
+              srcset="
+                ./images/header-mark-1x.png 1x,
+                ./images/header-mark-2x.png 2x
+              "
+              media="(min-width: 320px)"
+              width="74"
+              height="74" />
+            <img
+              class="sale-mark"
+              src="./images/header-mark-1x.png"
+              alt=""
+              width="74"
+              height="74"
+          /></picture>
+          <p class="sale-number">-74%</p>
+        </div>
+        <p class="sale-timer-text">Знижка може зникнути через:</p>
+        <div id="countdown" class="countdown">
+          <div class="countdown-number">
+            <span class="hours countdown-time"></span>
+          </div>
+          <div><span class="countdown-doubledot"></span></div>
+          <div class="countdown-number">
+            <span class="minutes countdown-time"></span>
+          </div>
+          <div><span class="countdown-doubledot"></span></div>
+          <div class="countdown-number">
+            <span class="seconds countdown-time"></span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="section-one">
+        <div class="container">
+          <h2 class="sect-one-title">
+            Як зрозуміти<br /><span
+              >що Вам час розпочати<br />свій шлях у трейдингу?</span
+            >
+          </h2>
+          <ul class="sect-one-list list">
+            <li class="one-list-item">
+              <p class="item-text">
+                Вас давно цікавлять фінансові ринки, але інформації так багато
+                що не знаєте з чого почати?
+              </p>
+            </li>
+            <li class="one-list-decoration"></li>
+            <li class="one-list-item">
+              <p class="item-text">Ви досягли своєї “стелі” на роботі?</p>
+            </li>
+            <li class="one-list-decoration"></li>
+            <li class="one-list-item">
+              <p class="item-text">
+                Втомилися від начальства, хочете свій особистий графік та
+                можливість працювати віддалено?
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section-two">
+        <div class="container">
+          <h2 class="sect-two-title">
+            Для кого Інтенсив <br />
+            <span>"Pro Trading"</span>
+          </h2>
+          <ul class="sect-two-list list">
+            <li class="two-list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./images/section-two/mobile-image-01-1x.png 1x,
+                    ./images/section-two/mobile-image-01-2x.png 2x
+                  "
+                  media="(min-width: 320px)"
+                  width="80"
+                  height="80" />
+                <img
+                  src="./images/section-two/mobile-image-01-1x.png"
+                  alt=""
+                  width="80"
+                  height="80"
+              /></picture>
+              <h3 class="two-list-title">Найманим співробітникам</h3>
+              <p class="two-list-text">
+                Це можливість отримати додаткове джерело доходу, яке з часом
+                може перерости в основне джерело доходу.
+              </p>
+            </li>
+            <li class="two-list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./images/section-two/mobile-image-02-1x.png 1x,
+                    ./images/section-two/mobile-image-02-2x.png 2x
+                  "
+                  media="(min-width: 320px)"
+                  width="80"
+                  height="80" />
+                <img
+                  src="./images/section-two/mobile-image-02-1x.png"
+                  alt=""
+                  width="80"
+                  height="80"
+              /></picture>
+              <h3 class="two-list-title">студентам</h3>
+              <p class="two-list-text">
+                Які мріють здобути фінансову незалежність
+              </p>
+            </li>
+            <li class="two-list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./images/section-two/mobile-image-03-1x.png 1x,
+                    ./images/section-two/mobile-image-03-2x.png 2x
+                  "
+                  media="(min-width: 320px)"
+                  width="80"
+                  height="80" />
+                <img
+                  src="./images/section-two/mobile-image-03-1x.png"
+                  alt=""
+                  width="80"
+                  height="80"
+              /></picture>
+              <h3 class="two-list-title">тим, хто починав вчитись трейдингу</h3>
+              <p class="two-list-text">але так нічого не вдалося</p>
+            </li>
+            <li class="two-list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./images/section-two/mobile-image-04-1x.png 1x,
+                    ./images/section-two/mobile-image-04-2x.png 2x
+                  "
+                  media="(min-width: 320px)"
+                  width="80"
+                  height="80" />
+                <img
+                  src="./images/section-two/mobile-image-04-1x.png"
+                  alt=""
+                  width="80"
+                  height="80"
+              /></picture>
+              <h3 class="two-list-title">тим, хто хоче навчитися</h3>
+              <p class="two-list-text">фінансової грамотності</p>
+            </li>
+            <li class="two-list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./images/section-two/mobile-image-05-1x.png 1x,
+                    ./images/section-two/mobile-image-05-2x.png 2x
+                  "
+                  media="(min-width: 320px)"
+                  width="80"
+                  height="80" />
+                <img
+                  src="./images/section-two/mobile-image-05-1x.png"
+                  alt=""
+                  width="80"
+                  height="80"
+              /></picture>
+              <h3 class="two-list-title">тим, хто в декреті</h3>
+              <p class="two-list-text">та шукаєте джерело доходу</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section-three">
+        <div class="author-container">
+          <h2 class="sect-three-title">Про <br /><span>автора</span></h2>
+          <picture
+            ><source
+              srcset="
+                ./images/author-mobile-1x.png 1x,
+                ./images/author-mobile-2x.png 2x
+              "
+              media="(min-width: 320px)"
+              width="100%  "
+              height="auto" />
+            <img
+              src="./images/author-mobile-1x.png"
+              alt=""
+              width="100%  "
+              height="auto"
+          /></picture>
+          <div class="name-wrapper">
+            <h3 class="name-wrapper-title">Віталій Півнєв</h3>
+            <p class="name-wrapper-description">
+              Трейдер та автор інтенсиву "Pro Trading"
+            </p>
+          </div>
+        </div>
+        <div class="container">
+          <ul class="sect-three-list list">
+            <li class="three-list-item">
+              <p class="list-item-text">
+                <span>
+                  – З більш ніж трирічним досвідом успішної практики,</span
+                >
+                я набув не лише цінного досвіду, а й розробив унікальні торгові
+                стратегії, які привели мене до помітних результатів на
+                фінансових ринках.
+              </p>
+            </li>
+            <li class="three-list-item">
+              <p class="list-item-text">
+                <span>
+                  – На даний момент я працюю з власним капіталом на
+                  брокері,</span
+                >
+                так і маю капітал в управлінні (Prop-компанії), понад $200 тис.
+                Мій шлях у трейдингу почався зі звичайних початкових кроків і
+                переріс у успішну справу всього життя.
+              </p>
+            </li>
+            <li class="three-list-item">
+              <p class="list-item-text">
+                <span> – Що робить мене унікальним?</span> Це мої власні торгові
+                сетапи, які стали основою створення
+                <span>інтенсиву "Pro Trading."</span>
+                Замість теоретичних концепцій я надам практичні інструменти, на
+                яких я досяг успіху. Моя мета – поділитися своїми знаннями та
+                навичками з вами, допомогти вам стати успішними трейдерами.
+              </p>
+            </li>
+          </ul>
+          <div class="wrapper">
+            <picture
+              ><source
+                srcset="
+                  ./images/sect-three-wrapper-fire-mobile-1x.png 1x,
+                  ./images/sect-three-wrapper-fire-mobile-2x.png 2x
+                "
+                media="(min-width: 320px)"
+                width="106"
+                height="32" />
+              <img
+                src="./images/sect-three-wrapper-fire-mobile-1x.png"
+                alt=""
+                width="106"
+                height="32"
+            /></picture>
+            <p class="fire-text sect-three-space">
+              <span>
+                Інтенсив «Pro Trading» створений з прицілом на ваші фінансові
+                цілі.</span
+              >
+              Разом зі мною, ви навчитеся розробляти власні стратегії, розуміти
+              ринкову психологію та досягати прибутку.
+            </p>
+            <p class="fire-text">
+              Дякую, що вирішили приєднатися до інтенсиву Pro Trading. Я
+              впевнений, що наш курс буде корисним та надихаючим путівником у
+              світі трейдингу.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="section-four">
+        <div class="container">
+          <h2 class="sect-four-title" id="more">
+            Програма<br /><span>курсу</span>
+          </h2>
+          <div class="faq">
+            <div class="question open isOpen">
+              <div class="question-name">
+                <p>1. Основи трейдингу</p>
+                <img
+                  class="question-plus"
+                  src="./images/questions-plus.svg"
+                  alt="+"
+                  width="18"
+                  height="18"
+                />
+              </div>
+              <div class="content">
+                <p>
+                  Ми почнемо з основ, допомагаючи вам зрозуміти, що таке
+                  трейдинг і як він працює на різних ринках
+                </p>
+              </div>
+            </div>
+            <div class="question">
+              <div class="question-name">
+                <p>2. Визначення структури ринку:</p>
+                <img
+                  class="question-plus"
+                  src="./images/questions-plus.svg"
+                  alt="+"
+                  width="18"
+                  height="18"
+                />
+              </div>
+              <div class="content">
+                <p>
+                  Вчимо вас аналізувати ринок, визначати тренди та розвороти
+                  цін.
+                </p>
+              </div>
+            </div>
+            <div class="question">
+              <div class="question-name">
+                <p>3. Фібоначчі у трейдингу:</p>
+                <img
+                  class="question-plus"
+                  src="./images/questions-plus.svg"
+                  alt="+"
+                  width="18"
+                  height="18"
+                />
+              </div>
+              <div class="content">
+                <p>
+                  Ми розповімо вам, як використовувати Фібоначчі-рівні для
+                  прогнозування майбутніх рухів цін.
+                </p>
+              </div>
+            </div>
+            <div class="question">
+              <div class="question-name">
+                <p>4. Розвороти ринку:</p>
+                <img
+                  class="question-plus"
+                  src="./images/questions-plus.svg"
+                  alt="+"
+                  width="18"
+                  height="18"
+                />
+              </div>
+              <div class="content">
+                <p>
+                  Ви навчитеся розпізнавати ознаки розворотів ринку та приймати
+                  відповідні рішення.
+                </p>
+              </div>
+            </div>
+            <div class="question">
+              <div class="question-name">
+                <p>5. Робота з брокером:</p>
+                <img
+                  class="question-plus"
+                  src="./images/questions-plus.svg"
+                  alt="+"
+                  width="18"
+                  height="18"
+                />
+              </div>
+              <div class="content">
+                <p>
+                  Дізнайтеся, як вибрати надійного брокера та ефективно
+                  взаємодіяти з ним.
+                </p>
+              </div>
+            </div>
+            <div class="question">
+              <div class="question-name">
+                <p>6. Ризик-менеджмент:</p>
+                <img
+                  class="question-plus"
+                  src="./images/questions-plus.svg"
+                  alt="+"
+                  width="18"
+                  height="18"
+                />
+              </div>
+              <div class="content">
+                <p>
+                  Ми допоможемо вам розробити стратегії управління ризиками, щоб
+                  зберегти ваш капітал у безпеці.
+                </p>
+              </div>
+            </div>
+            <div class="question">
+              <div class="question-name">
+                <p>7. Торгові патерни:</p>
+                <img
+                  class="question-plus"
+                  src="./images/questions-plus.svg"
+                  alt="+"
+                  width="18"
+                  height="18"
+                />
+              </div>
+              <div class="content">
+                <p>
+                  Освоївши різні патерни цінового руху, ви зможете приймати
+                  більш поінформовані рішення.
+                </p>
+              </div>
+            </div>
+            <div class="question last-question">
+              <div class="question-name">
+                <p>8. Психологія трейдингу:</p>
+                <img
+                  class="question-plus"
+                  src="./images/questions-plus.svg"
+                  alt="+"
+                  width="18"
+                  height="18"
+                />
+              </div>
+              <div class="content">
+                <p>
+                  Розуміння психології ринку та ваших власних реакцій на нього –
+                  ключовий аспект успішного трейдингу.
+                </p>
+                <p>
+                  Наш курс підходить як для трейдерів, які бажають займатися
+                  фондовим ринком, так і для тих, хто цікавиться торгівлею
+                  криптовалютою.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="wrapper">
+            <h3 class="wrapper-title">це все<br /></h3>
+            <h3 class="wrapper-title-dop">за ціною</h3>
+            <div class="second-wrapper">
+              <p class="old-price">3000грн</p>
+              <p class="new-price">777грн</p>
+            </div>
+            <p class="price-description">
+              Встигніть придбати зі <span>знижкою 74%</span>
+            </p>
+          </div>
+          <button class="buy-button" type="module" data-action="open-modal">
+            ПЕРЕЙТИ ДО ПОКУПКИ
+          </button>
+        </div>
+      </section>
+      <section class="section-five">
+        <div class="container">
+          <h2 class="sect-five-title">
+            Як<br /><span class="title-span-one">відбувається<br /></span
+            ><span class="title-span-two">навчання</span>
+          </h2>
+          <p class="sect-five-text sect-five-space">
+            Після оплати ви отримаєте доступ на навчальну платформу, де на вас
+            чекає 8 уроків по 15-60 хвилин. 
+          </p>
+          <p class="sect-five-text">
+            Після проходження кожного уроку ви отримаєте додаткові матеріали та
+            практичне завдання.
+          </p>
+        </div>
+      </section>
+      <section class="section-six">
+        <div class="container">
+          <h2 class="sect-six-title">Відгуки</h2>
+          <div class="siema">
+            <div class="siema-border">
+              <picture>
+                <source
+                  srcset="
+                    ./images/reviews/mobile-01-1x.png 1x,
+                    ./images/reviews/mobile-01-2x.png 2x
+                  "
+                  media="(min-width: 320px)"
+                  width="228"
+                  height="228" />
+                <img
+                  class="siema-image"
+                  src="./images/reviews/mobile-01-1x.png"
+                  alt="reviews"
+                  width="228"
+                  height="228"
+              /></picture>
+            </div>
+            <div class="siema-border">
+              <picture>
+                <source
+                  srcset="
+                    ./images/reviews/mobile-02-1x.png 1x,
+                    ./images/reviews/mobile-02-2x.png 2x
+                  "
+                  media="(min-width: 320px)"
+                  width="228"
+                  height="228" />
+                <img
+                  class="siema-image"
+                  src="./images/reviews/mobile-02-1x.png"
+                  alt="reviews"
+                  width="228"
+                  height="228"
+              /></picture>
+            </div>
+            <div class="siema-border">
+              <picture>
+                <source
+                  srcset="
+                    ./images/reviews/mobile-03-1x.png 1x,
+                    ./images/reviews/mobile-03-2x.png 2x
+                  "
+                  media="(min-width: 320px)"
+                  width="228"
+                  height="228" />
+                <img
+                  class="siema-image"
+                  src="./images/reviews/mobile-03-1x.png"
+                  alt="reviews"
+                  width="228"
+                  height="228"
+              /></picture>
+            </div>
+          </div>
+          <div class="siema-button-control">
+            <button class="prev">
+              <img
+                src="./images/siema-button-left.svg"
+                alt=""
+                width="28"
+                height="20"
+              />
+            </button>
+            <button class="next">
+              <img
+                src="./images/siema-button-right.svg"
+                alt=""
+                width="28"
+                height="20"
+              />
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="section-seven">
+        <div class="container">
+          <div class="sect-seven-bitcoin">
+            <picture>
+              <source
+                srcset="
+                  ./images/sect-seven-bitcoin-mobile-1x.png 1x,
+                  ./images/sect-seven-bitcoin-mobile-2x.png 2x
+                "
+                media="(min-width: 768px)"
+                width="140"
+                height="140" />
+              <img
+                class="seven-bitcoin"
+                src="./images/sect-seven-bitcoin-mobile-1x.png"
+                alt="reviews"
+                width="140"
+                height="140"
+            /></picture>
+          </div>
+          <div class="seven-wrapper">
+            <h2 class="seven-wrapper-title">
+              Результати після<br /><span>навчання</span>
+            </h2>
+            <p class="seven-wrapper-text">
+              Через короткі 7 днів, ви здобудете навички:
+            </p>
+            <ul class="sect-seven-list list">
+              <li class="seven-list-item">
+                <p class="item-text">
+                  – Успішно відкривати свої перші прибуткові угоди, що
+                  завершуються на вигідних рівнях тейк-профіту
+                </p>
+              </li>
+              <li class="seven-list-item">
+                <p class="item-text">
+                  – Ви освоїте навички аналізу ринку, дозволяючи вам точно
+                  визначати його структуру та вміло торгувати по тренду
+                </p>
+              </li>
+              <li class="seven-list-item">
+                <p class="item-text">
+                  – Крім того, ви навчитесь визначати контр-трендові угоди,
+                  розширюючи свої можливості на ринку
+                </p>
+              </li>
+              <li class="seven-list-item">
+                <p class="item-text">
+                  – Ви знайдете надійного брокера, що забезпечить вам безпечну
+                  та ефективну торгівлю
+                </p>
+              </li>
+              <li class="seven-list-item">
+                <p class="item-text">
+                  – Опануєте розуміння психології ринку та вміння контролювати
+                  свої власні реакції, що є ключовим аспектом успішного
+                  трейдингу
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="section-eight">
+        <div class="container">
+          <h2 class="sect-eight-title">
+            Відповіді на<br /><span>запитання</span>
+          </h2>
+          <div class="faq-two">
+            <div class="question-two open isOpen">
+              <div class="question-two-name">
+                <p>
+                  Якщо я нічого не розумію в трейдінгу, чи підійде мені курс?
+                </p>
+                <img
+                  class="question-plus"
+                  src="./images/questions-plus.svg"
+                  alt="+"
+                  width="18"
+                  height="18"
+                />
+              </div>
+              <div class="content-two">
+                <p>Так, цей курс розрахований для новачків</p>
+              </div>
+            </div>
+            <div class="question-two">
+              <div class="question-two-name">
+                <p>Чи буде практика?</p>
+                <img
+                  class="question-plus"
+                  src="./images/questions-plus.svg"
+                  alt="+"
+                  width="18"
+                  height="18"
+                />
+              </div>
+              <div class="content-two">
+                <p>
+                  Так, ви відпрацьовуватимете навички торгівлі на демо-рахунках
+                </p>
+              </div>
+            </div>
+            <div class="question-two">
+              <div class="question-two-name">
+                <p>Який термін доступу до навчальних матеріалів?</p>
+                <img
+                  class="question-plus"
+                  src="./images/questions-plus.svg"
+                  alt="+"
+                  width="18"
+                  height="18"
+                />
+              </div>
+              <div class="content-two">
+                <p>Після закінчення інтенсиву доступ буде відкрито 60 днів</p>
+              </div>
+            </div>
+            <div class="question-two">
+              <div class="question-two-name">
+                <p>
+                  У мене є невелика сума для інвестування, чи можу я почати
+                  торгувати?
+                </p>
+                <img
+                  class="question-plus"
+                  src="./images/questions-plus.svg"
+                  alt="+"
+                  width="18"
+                  height="18"
+                />
+              </div>
+              <div class="content-two">
+                <p>
+                  Так, починати потрібно з невеликої суми, на курсі ви
+                  дізнаєтесь які можливості дає брокер та додаткові джерела
+                  інвестування
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-deals-container">
+          <a
+            class="footer-deals"
+            href="https://docs.google.com/document/d/19He48LDAbiL6c2gz84kPvkhZmW571rIQaaMdhsLzhcY/edit?usp=sharing"
+            target="_blank"
+            rel="nofollow"
+            >Договір оферта</a
+          >
+          <a
+            class="footer-deals"
+            href="https://docs.google.com/document/d/16ONzPjHiIcCLpQnAlbr6QilIAEUo9hZNggwXe7Awn3Q/edit?usp=sharing"
+            target="_blank"
+            rel="nofollow"
+            >Політика конфіденційності</a
+          >
+        </div>
+        <div class="social-container">
+          <img
+            src="./images/instagram-icon.svg"
+            alt="insta"
+            width="16"
+            height="16"
+          /><a
+            class="insta-link"
+            href="https://www.instagram.com/pivnevvitalii/"
+            target="_blank"
+            rel="nofollow"
+            >@pivnevvitalii</a
+          >
+        </div>
+        <div class="fop-container">
+          <p>ФОП Півнев Віталій Леонідович <br />ІПН: 3275503973</p>
+        </div>
+      </div>
+    </footer>
+    <div class="backdrop js-backdrop">
+      <div class="modal">
+        <button
+          class="modal-close-button"
+          type="button"
+          data-action="close-modal"
+        >
+          <img
+            src="./images/modal-close-icon.svg"
+            alt=""
+            width="30"
+            height="30"
+          />
+        </button>
+        <p class="modal-title">Оберіть зручний спосіб оплати:</p>
+        <a class="modal-mono-link link" href="">mono<span>pay</span></a>
+        <a class="modal-usdt-link link" href=""
+          ><div class="usdt-wrapper">
+            <picture>
+              <source
+                srcset="
+                  ./images/modal-usdt-icon-1x.png 1x,
+                  ./images/modal-usdt-icon-2x.png 2x
+                "
+                media="(min-width: 320px)"
+                width="40"
+                height="36" />
+              <img
+                class="siema-image"
+                src="./images/modal-usdt-icon-1x.png"
+                alt="reviews"
+                width="40"
+                height="36"
+            /></picture>
+            <p class="usdt-text">USDT</p>
+          </div></a
+        >
+      </div>
+    </div>
+    <script src="./js/jquery-3.7.0.min.js" type="module"></script>
+    <script src="./js/js-modal.js"></script>
+    <script src="./js/siema.min.js"></script>
+    <script>
+      const mySiema = new Siema({
+        selector: ".siema",
+        duration: 200,
+        easing: "ease-out",
+        perPage: { 1280: 2 },
+        startIndex: 0,
+        draggable: true,
+        multipleDrag: true,
+        threshold: 20,
+        loop: false,
+        rtl: false,
+        onInit: () => {},
+        onChange: () => {},
+      });
+      document
+        .querySelector(".prev")
+        .addEventListener("click", () => mySiema.prev());
+      document
+        .querySelector(".next")
+        .addEventListener("click", () => mySiema.next());
+    </script>
+    <script src="./js/faq.js" type="module"></script>
+    <script src="./js/timer.js" type="module"></script>
+  </body>
+</html>
