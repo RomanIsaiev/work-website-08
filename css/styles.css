@@ -96,6 +96,7 @@ body {
 
 .header .start {
   color: #fff;
+  text-align: center;
   font-family: Futura PT;
   font-size: 12px;
   font-style: normal;
@@ -107,7 +108,7 @@ body {
   background: rgba(255, 255, 255, 0.1);
   padding: 4px 15px;
 
-  max-width: 125px;
+  max-width: 150px;
 
   margin-bottom: 80px;
 }
@@ -567,7 +568,7 @@ body {
   width: 120px;
   background-color: #fff;
 
-  margin-top: 20px;
+  margin-top: 0;
   margin-bottom: 10px;
 
   margin-left: auto;
@@ -816,6 +817,20 @@ body {
   background: var(--Linear, linear-gradient(90deg, #3a9d8d 0%, #db46d5 100%));
 
   border: none;
+
+  animation: pulseScale 2000ms infinite;
+}
+
+@keyframes pulseScale {
+  0% {
+    scale: 1;
+  }
+  50% {
+    scale: 1.08;
+  }
+  100% {
+    scale: 1;
+  }
 }
 
 /* faq-01 */
@@ -1321,6 +1336,41 @@ body {
   line-height: normal;
 }
 
+.footer .partner-container {
+  display: block;
+}
+
+.footer .partner-container .holder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.footer .partner-container::after {
+  content: "";
+  display: block;
+
+  height: 1px;
+  width: 120px;
+  background-color: #fff;
+
+  margin-top: 24px;
+  margin-bottom: 24px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.partner-text {
+  color: #34e834;
+  font-family: Futura PT;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: normal;
+}
+
 /* modal */
 
 body.show-modal .backdrop {
@@ -1381,7 +1431,8 @@ body.show-modal .modal {
 .modal-mono-link {
   display: flex;
   width: 280px;
-  padding: 14px 130px;
+  height: 47px;
+  padding: 14px 50px;
   justify-content: center;
   align-items: center;
   gap: 3px;
@@ -1390,15 +1441,8 @@ body.show-modal .modal {
   margin-right: auto;
 
   border-radius: 60px;
-  background: linear-gradient(0deg, #18191d 0%, #3c414c 100%);
-
-  color: #fff;
-  text-align: center;
-  font-family: Inter;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
+  background: inherit;
+  border: 1px solid #000;
 
   margin-bottom: 20px;
 }
