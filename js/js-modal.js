@@ -2,11 +2,18 @@ const refs = {
   openModalBtn: document.querySelector('[data-action="open-modal"]'),
   closeModalBtn: document.querySelector('[data-action="close-modal"]'),
   backdrop: document.querySelector(".js-backdrop"),
+
+  openModalinModal: document.querySelector("[data-modal-open]"),
+  closeModalInModal: document.querySelector("[data-modal-close]"),
+  modal: document.querySelector("[data-modal]"),
 };
 
 refs.openModalBtn.addEventListener("click", onOpenModal);
 refs.closeModalBtn.addEventListener("click", onCloseModal);
 refs.backdrop.addEventListener("click", onBackdropClick);
+
+refs.openModalinModal.addEventListener("click", toggleModal);
+refs.closeModalInModal.addEventListener("click", toggleModal);
 
 function onOpenModal() {
   window.addEventListener("keydown", onEscKeyPress);
@@ -31,4 +38,8 @@ function onEscKeyPress(event) {
   if (isEscKey) {
     onCloseModal();
   }
+}
+
+function toggleModal() {
+  refs.modal.classList.toggle("is-hidden");
 }

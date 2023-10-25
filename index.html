@@ -815,7 +815,25 @@
           />
         </button>
         <p class="modal-title">Оберіть зручний спосіб оплати:</p>
-        <a
+        <button class="modal-mono-link link" type="button" data-modal-open>
+          <picture>
+            <source
+              srcset="
+                ./images/wayforpay-image-mobile-1x.png 1x,
+                ./images/wayforpay-image-mobile-2x.png 2x
+              "
+              media="(min-width: 320px)"
+              width="198"
+              height="39" />
+            <img
+              class="siema-image"
+              src="./images/wayforpay-image-mobile-1x.png"
+              alt="reviews"
+              width="198"
+              height="39"
+          /></picture>
+        </button>
+        <!-- <a
           class="modal-mono-link link"
           href="https://secure.wayforpay.com/button/bdf39bb3ebb0c"
           target="_blank"
@@ -836,7 +854,7 @@
               alt="reviews"
               width="198"
               height="39" /></picture
-        ></a>
+        ></a> -->
         <a
           class="modal-usdt-link link"
           href="https://t.me/+KjROV_SBYb82ZDJi"
@@ -862,6 +880,20 @@
             <p class="usdt-text">USDT</p>
           </div></a
         >
+      </div>
+    </div>
+
+    <div class="backdrop-in-modal is-hidden" data-modal>
+      <div class="modal-in-modal">
+        <button type="button" class="close-button" data-modal-close>
+          <img
+            src="./images/close-modal-icon.svg"
+            width="30"
+            height="30"
+            alt="close"
+          />
+        </button>
+        <div id="kwiga-widget-1698221746"></div>
       </div>
     </div>
     <script src="./js/jquery-3.7.0.min.js" type="module"></script>
@@ -891,5 +923,9 @@
     </script>
     <script src="./js/faq.js" type="module"></script>
     <script src="./js/timer.js" type="module"></script>
+    <script
+      type="module"
+      src="https://kwiga.com/build/js/kwiga-widget.js?t=1698221746&uuid=958c437c-8fc0-4731-b8aa-32da3646b574&producer=https://kwiga.com/"
+    ></script>
   </body>
 </html>
